@@ -1,0 +1,23 @@
+#include <PRIZM.h>
+PRIZM Jagmeet;
+void setup() {
+Jagmeet.PrizmBegin();
+Jagmeet.setMotorInvert(1,1);
+
+}
+
+void loop() {
+Jagmeet.setMotorSpeeds(360,360);
+  delay(3250);
+  Jagmeet.setMotorSpeeds(360,-360);
+  delay(500);
+  Jagmeet.setMotorSpeeds(360,360);
+  delay(1250);
+  Jagmeet.setMotorSpeeds(-360,360);
+  delay(500);
+  Jagmeet.setMotorSpeeds(360,360);
+  delay(2500);
+ Jagmeet.PrizmEnd();
+
+
+}
