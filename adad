@@ -8,7 +8,7 @@ Jagmeet.setMotorInvert(1,1);
 
 void loop() {
 Jagmeet.setMotorSpeeds(360,360);
-  delay(3250);
+  delay(4000);
   Jagmeet.setMotorSpeeds(360,-360);
   delay(500);
   Jagmeet.setMotorSpeeds(360,360);
@@ -16,8 +16,33 @@ Jagmeet.setMotorSpeeds(360,360);
   Jagmeet.setMotorSpeeds(-360,360);
   delay(500);
   Jagmeet.setMotorSpeeds(360,360);
-  delay(2500);
- Jagmeet.PrizmEnd();
+  delay(1600);
+  Jagmeet.setCRServoState(1, 100);
+  delay(500);
+  Jagmeet.setCRServoState(1, -100);
+  delay(100);
+  Jagmeet.setCRServoState(1, 100);
+  delay(100);
+  Jagmeet.setCRServoState(1, -100);
+  delay(100);
+  Jagmeet.setCRServoState(1, 100);
+  delay(100);
+  Jagmeet.setCRServoState(1, -100);
+  delay(100);
+  Jagmeet.setCRServoState(1, 100);
+  delay(100);
+  Jagmeet.setCRServoState(1, -100);
+  delay(100);
+  Jagmeet.setCRServoState(1, 100);
+  delay(100);
+  Jagmeet.setCRServoState(1, -100);
+  delay(100);
+  Jagmeet.setCRServoState(1, 100);
+  delay(100);
+  Jagmeet.setCRServoState(1, -100);
+  delay(100);
+  Jagmeet.setCRServoState(1, 0);
+  Jagmeet.PrizmEnd();
 
 
 }
